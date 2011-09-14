@@ -191,6 +191,18 @@ a:hover{
   padding: .15em;
 }
 
+.pageinset{
+  width: 30%;
+  border: 2px solid #808080;
+  float: right;
+  margin: 0 0 2em 2em;
+  padding:  1em;
+}
+
+.pageinset .caption{
+  text-align: center;
+}
+
 #page #map{
   float: right;
   width: 65%;
@@ -204,7 +216,6 @@ a:hover{
 }
 
 #pagecontent{
-  clear:both;
   width: 100%;
 }
 
@@ -262,7 +273,7 @@ a:hover{
 
 #footer ul#rights li{
   display: inline;
-  padding: 0 2em 0 0;
+  padding: 0 0 0 2em;
 }
 
 
