@@ -55,10 +55,17 @@ body{
 
 p{
   line-height: 140%;
+  margin-bottom: 1em;
+}
+
+p.citation{
+  padding-left: 22px;
+  text-indent: -22px;
 }
 
 table{
   width: 100%;
+  margin: 1em 0 2em 0;
 }
 
 tr{
@@ -82,12 +89,13 @@ a:hover{
 }
 
 .caption{
-  padding: 1em .2em;
+  padding: .5em .2em;
   font-style: oblique;
 }
 
-.pad-top{
-  padding-top: .5em;
+.float-left{
+  float: left;
+  width: 35%;
 }
 
 
@@ -105,7 +113,7 @@ a:hover{
 }
 
 #header h1{
-  padding: .5em .25em .15em .25em;
+  padding: 1em .25em .15em .25em;
   size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -155,7 +163,7 @@ a:hover{
 
 #navlist{
   width: 900px;
-  margin: 1.5em auto;
+  margin: 1.5em auto .5em auto;
   padding: .3em 0;
 }
 
@@ -165,35 +173,68 @@ a:hover{
   padding: .1em;
 }
 
-/*pagecontent*/
+/*page and pagecontent*/
 
-#pagecontent{
+#page{
   width: 900px;
-  margin: 2.5em auto;
+  margin: 1em auto;
 }
 
-#pagecontent #interior-header{
-  float: left;
-  width: 35%;
-  padding: 1em 0;
+#page #interior-header{
+  margin: 2em 0 0 0;
+  padding: .25em 0;
 }
 
 #interior-header h2{
   color: #108EBC;
-  font-size: 1.7em;
-  padding-bottom: .5em;
+  font-size: 1.5em;
+  padding: .15em;
 }
 
-#pagecontent #map{
+#page #map{
   float: right;
   width: 65%;
   padding: .8em 0;
 }
 
-#pagecontent h2{
+#page h2{
   clear: both;
   font-weight: bold;
-  padding: 1em 0;
+  padding: .5em 0;
+}
+
+#pagecontent{
+  clear:both;
+  width: 100%;
+}
+
+#pagecontent h3{
+  font-weight: bold;
+  padding: 1em 0 1em 0;
+}
+
+#pagecontent ul, #pagecontent ol{
+  line-height: 160%
+ }
+ 
+ #pagecontent ol{
+   list-style-type: decimal;
+   list-position: inside;
+   padding-left: 4em;
+}
+ 
+#pagecontent table th{
+  text-align: left;
+  padding: .5em 0;
+}
+
+#pagecontent table .row-divider{
+  padding: .5em 0;
+}
+
+#pagecontent table tr td{
+  padding: .25em 0;
+  vertical-align: top;
 }
 
 /*footer*/

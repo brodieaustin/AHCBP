@@ -1,12 +1,8 @@
-#pagecontent #interior-header{
-  width: 100%;
- }
-
-#pagecontent #pageinset{
+#page #pageinset{
   width: 30%;
   border: 2px solid #808080;
   float: right;
-  margin: 0 2em;
+  margin: 2em 0 2em 2em;
   padding:  0 1em;
 }
 
@@ -27,52 +23,52 @@
   padding: 1em 0;
 }
 
-#pagecontent #content{
+#pagecontent{
   clear: left;
-  margin: 1em 0 0 0;
+  margin: .5em 0 0 0;
 }
 
-#pagecontent #content ul{
+#pagecontent ul{
  margin: 20px 0 5px; 0;
  padding: 5px 0 5px 0;
 }
 
-#pagecontent #content li{
+#pagecontent li{
   margin: 0;
   padding: 0;
 }
 
-#pagecontent #content ul li ul{
+#pagecontent ul li ul{
   margin: 2px 0 6px 0;
   padding: 0;
 }
 
-#pagecontent #content ul li ul li{
+#pagecontent ul li ul li{
   margin: 2px 0 6px 0;
   padding: 0:
 }
 
-#pagecontent #content .heading{
+#pagecontent .heading{
   font-weight: bold;
   margin: 20px 0 5px 0;
   padding: 5px;
 }
 
-#pagecontent #content .subheading{
+#pagecontent .subheading{
   font-weight: bold;
 }
 
-#pagecontent #content .description{
+#pagecontent .description{
   margin: 5px 0 0 0;
   padding: 5px;
 }
 
-#pagecontent #content .description ol{
+#pagecontent .description ol{
   margin: 5px 20px 0 30px;
   padding: 2px;
   list-style-position: outside;
 }
 
-#pagecontent #content .description ol li{
+#pagecontent .description ol li{
   padding: 5px 10px 5px 10px;
 }
