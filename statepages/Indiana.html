@@ -6,245 +6,117 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="author" content="Brodie Austin" />
 <meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
-<link type="text/css" rel="stylesheet" href="../styles/style.css" />
-<link type="text/css" rel="stylesheet" href="../styles/statepages.css" />
-<script type="text/javascript" src="../scripts/dropdownform.js" language="JavaScript"></script>
+<link type="text/css" rel="stylesheet" href="../styles/screen.css" />
+<script type="text/javascript" src="../scripts/atlas.js" language="JavaScript"></script>
 </head>
 <body>
-<div id="pagecontainer">
+<div id="header-wrapper">
 <div id="header">
-<h1>Indiana</h1>
+<form id="statebox">
+<label><input type="radio" name="link_type" value="state_page" checked="checked" />State Pages</label>
+<label><input type="radio" name="link_type" value="map" />Interactive Maps</label>
+<label><input type="radio" name="link_type" value="metadata" />Metadata</label>
+<select name="state_select" onchange="followLink(this.form, '../')" >            
+<option value="">Select a state...</option>          
+<option value="AL;Alabama">Alabama</option>
+<option value="AK;Alaska">Alaska</option>
+<option value="AZ;Arizona">Arizona</option>
+<option value="AR;Arkansas">Arkansas</option>
+<option value="CA;California">California</option>
+<option value="CO;Colorado">Colorado</option>
+<option value="CT;Connecticut">Connecticut</option>
+<option value="DT;Dakota_Territory">Dakota Territory</option>
+<option value="DE;Delaware">Delaware</option>
+<option value="DC;District_of_Columbia">District of Columbia</option>
+<option value="FL;Florida">Florida</option>
+<option value="GA;Georgia">Georgia</option>
+<option value="HI;Hawaii">Hawaii</option>
+<option value="ID;Idaho">Idaho</option>
+<option value="IL;Illinois">Illinois</option>
+<option value="IN;Indiana">Indiana</option>
+<option value="IA;Iowa">Iowa</option>
+<option value="KS;Kansas">Kansas</option>
+<option value="KY;Kentucky">Kentucky</option>
+<option value="LA;Lou;isiana">Louisiana</option>
+<option value="ME;Maine">Maine</option>
+<option value="MD;Maryland">Maryland</option>
+<option value="MA;Massachusetts">Massachusetts</option>
+<option value="MI;Michigan">Michigan</option>
+<option value="MN;Minnesota">Minnesota</option>
+<option value="MS;Mississippi">Mississippi</option>
+<option value="MI;Missouri">Missouri</option>
+<option value="MT;Montana">Montana</option>
+<option value="NE;Nebraska">Nebraska</option>
+<option value="NV;Nevada">Nevada</option>
+<option value="NH;New_Hampshire">New Hampshire</option>
+<option value="NJ;New_Jersey">New Jersey</option>
+<option value="NM;New_Mexico">New Mexico</option>
+<option value="NY;New_York">New York</option>
+<option value="NC;North_Carolina">North Carolina</option>
+<option value="ND;North_Dakota">North Dakota</option>
+<option value="OH;Ohio">Ohio</option>
+<option value="OK;Oklahoma">Oklahoma</option>
+<option value="OR;Oregon">Oregon</option>
+<option value="PA;Pennsylvania">Pennsylvania</option>
+<option value="RI;Rhode_Island">Rhode Island</option>
+<option value="SD;South_Dakota">South Dakota</option>
+<option value="SC;South_Carolina">South Carolina</option>
+<option value="TN;Tennessee">Tennessee</option>
+<option value="TX;Texas">Texas</option>
+<option value="UT;Utah">Utah</option>
+<option value="VT;Vermont">Vermont</option>
+<option value="VA;Virginia">Virginia</option>
+<option value="WA;Washington">Washington</option>
+<option value="WV;West_Virginia">West Virginia</option>
+<option value="WI;Wisconsin">Wisconsin</option>
+<option value="WY;Wyoming">Wyoming</option>
+</select>
+</form>
+<h1>Atlas of Historical County Boundaries</h1>
 <ul>
-<li><a href="../index.html" title="Home">Atlas of Historical County Boundaries</a></li>
+<li><a href="http://www.newberry.org" title="Newberry Library">The Newberry Library</a></li>
+<li><a href="http://www.newberry.org/scholl/schollhome.html" title="Scholl Center">Dr. William M. Scholl Center for American History and Culture</a></li>
 </ul>
 </div>
-<div id="sidebar">
-<div class="item">
-<h2>Menu</h2>
-<ul class="navlist">
+</div>
+<div id="navlist">
+<ul>
 <li><a href="../index.html" title="Home">Home</a></li>
-<li><a href="../downloadfiles.html" title="Download Files">Download GIS Files</a></li>
-<li><a href="../usingatlas.html" title="Using Atlas">Using the Atlas</a></li>
-<li><a href="../project.html" title="Project">About the Project</a></li>
+<li><a href="../downloadfiles.html" title="Download Files">Download Files</a></li>
+<li><a href="../usingatlas.html" title="Using the Atlas">Using the Atlas</a></li>
+<li><a href="../project.html" title="About the Project">About the Project</a></li>
 <li><a href="../publications.html" title="Publications">Publications</a></li>
 </ul>
 </div>
-<div class="item">
-<h2>Quick Links</h2>
-<form id="statepageform" action="">
-<select name="dropdownoption" onchange="surfto(this.form)" >            
-<option value="">State Pages</option>          
-<option value="Alabama.html">Alabama</option>
-<option value="Alaska.html">Alaska</option>
-<option value="Arizona.html">Arizona</option>
-<option value="Arkansas.html">Arkansas</option>
-<option value="California.html">California</option>
-<option value="Colorado.html">Colorado</option>
-<option value="Connecticut.html">Connecticut</option>
-<option value="Dakota_Territory.html">Dakota Territory</option>
-<option value="Delaware.html">Delaware</option>
-<option value="District_of_Columbia.html">District of Columbia</option>
-<option value="Florida.html">Florida</option>
-<option value="Georgia.html">Georgia</option>
-<option value="Hawaii.html">Hawaii</option>
-<option value="Idaho.html">Idaho</option>
-<option value="Illinois.html">Illinois</option>
-<option value="Indiana.html">Indiana</option>
-<option value="Iowa.html">Iowa</option>
-<option value="Kansas.html">Kansas</option>
-<option value="Kentucky.html">Kentucky</option>
-<option value="Louisiana.html">Louisiana</option>
-<option value="Maine.html">Maine</option>
-<option value="Maryland.html">Maryland</option>
-<option value="Massachusetts.html">Massachusetts</option>
-<option value="Michigan.html">Michigan</option>
-<option value="Minnesota.html">Minnesota</option>
-<option value="Mississippi.html">Mississippi</option>
-<option value="Missouri.html">Missouri</option>
-<option value="Montana.html">Montana</option>
-<option value="Nebraska.html">Nebraska</option>
-<option value="Nevada.html">Nevada</option>
-<option value="New_Hampshire.html">New Hampshire</option>
-<option value="New_Jersey.html">New Jersey</option>
-<option value="New_Mexico.html">New Mexico</option>
-<option value="New_York.html">New York</option>
-<option value="North_Carolina.html">North Carolina</option>
-<option value="North_Dakota.html">North Dakota</option>
-<option value="Ohio.html">Ohio</option>
-<option value="Oklahoma.html">Oklahoma</option>
-<option value="Oregon.html">Oregon</option>
-<option value="Pennsylvania.html">Pennsylvania</option>
-<option value="Rhode_Island.html">Rhode Island</option>
-<option value="South_Dakota.html">South Dakota</option>
-<option value="South_Carolina.html">South Carolina</option>
-<option value="Tennessee.html">Tennessee</option>
-<option value="Texas.html">Texas</option>
-<option value="Utah.html">Utah</option>
-<option value="Vermont.html">Vermont</option>
-<option value="Virginia.html">Virginia</option>
-<option value="Washington.html">Washington</option>
-<option value="West_Virginia">West Virginia</option>
-<option value="Wisconsin">Wisconsin</option>
-<option value="Wyoming">Wyoming</option>
-</select>
-</form>
-<form id="interactivemapform" action="">
-<select name="dropdownoption" onchange="surfto(this.form)" > 
-<option value="">Interactive Maps</option>
-<option value="http://historical-county.newberry.org/website/Alabama/viewer.htm">Alabama</option>
-<option value="http://historical-county.newberry.org/website/Alaska/viewer.htm">Alaska</option>
-<option value="http://historical-county.newberry.org/website/Arizona/viewer.htm">Arizona</option>
-<option value="http://historical-county.newberry.org/website/Arkansas/viewer.htm">Arkansas</option>
-<option value="http://historical-county.newberry.org/website/California/viewer.htm">California</option>
-<option value="http://historical-county.newberry.org/website/Colorado/viewer.htm">Colorado</option>
-<option value="http://historical-county.newberry.org/website/Connecticut/viewer.htm">Connecticut</option>
-<option value="http://historical-county.newberry.org/website/Dakota_Territory/viewer.htm">Dakota Territory</option>
-<option value="http://historical-county.newberry.org/website/Delaware/viewer.htm">Delaware</option>
-<option value="http://historical-county.newberry.org/website/District_of_Columbia/viewer.htm">District of Columbia</option>
-<option value="http://historical-county.newberry.org/website/Florida/viewer.htm">Florida</option>
-<option value="http://historical-county.newberry.org/website/Georgia/viewer.htm">Georgia</option>
-<option value="http://historical-county.newberry.org/website/Hawaii/viewer.htm">Hawaii</option>
-<option value="http://historical-county.newberry.org/website/Idaho/viewer.htm">Idaho</option>
-<option value="http://historical-county.newberry.org/website/Illinois/viewer.htm">Illinois</option>
-<option value="http://historical-county.newberry.org/website/Indiana/viewer.htm">Indiana</option>
-<option value="http://historical-county.newberry.org/website/Iowa/viewer.htm">Iowa</option>
-<option value="http://historical-county.newberry.org/website/Kansas/viewer.htm">Kansas</option>
-<option value="http://historical-county.newberry.org/website/Kentucky/viewer.htm">Kentucky</option>
-<option value="http://historical-county.newberry.org/website/Louisiana/viewer.htm">Louisiana</option>
-<option value="http://historical-county.newberry.org/website/Maine/viewer.htm">Maine</option>
-<option value="http://historical-county.newberry.org/website/Maryland/viewer.htm">Maryland</option>
-<option value="http://historical-county.newberry.org/website/Massachusetts/viewer.htm">Massachusetts</option>
-<option value="http://historical-county.newberry.org/website/Michigan/viewer.htm">Michigan</option>
-<option value="http://historical-county.newberry.org/website/Minnesota/viewer.htm">Minnesota</option>
-<option value="http://historical-county.newberry.org/website/Mississippi/viewer.htm">Mississippi</option>
-<option value="http://historical-county.newberry.org/website/Missouri/viewer.htm">Missouri</option>
-<option value="http://historical-county.newberry.org/website/Montana/viewer.htm">Montana</option>
-<option value="http://historical-county.newberry.org/website/Nebraska/viewer.htm">Nebraska</option>
-<option value="http://historical-county.newberry.org/website/Nevada/viewer.htm">Nevada</option>
-<option value="http://historical-county.newberry.org/website/New_Hampshire/viewer.htm">New Hampshire</option>
-<option value="http://historical-county.newberry.org/website/New_Jersey/viewer.htm">New Jersey</option>
-<option value="http://historical-county.newberry.org/website/New_Mexico/viewer.htm">New Mexico</option>
-<option value="http://historical-county.newberry.org/website/New_York/viewer.htm">New York</option>
-<option value="http://historical-county.newberry.org/website/North_Carolina/viewer.htm">North Carolina</option>
-<option value="http://historical-county.newberry.org/website/North_Dakota/viewer.htm">North Dakota</option>
-<option value="http://historical-county.newberry.org/website/Ohio/viewer.htm">Ohio</option>
-<option value="http://historical-county.newberry.org/website/Oklahoma/viewer.htm">Oklahoma</option>
-<option value="http://historical-county.newberry.org/website/Oregon/viewer.htm">Oregon</option>
-<option value="http://historical-county.newberry.org/website/Pennsylvania/viewer.htm">Pennsylvania</option>
-<option value="http://historical-county.newberry.org/website/Rhode_Island/viewer.htm">Rhode Island</option>
-<option value="http://historical-county.newberry.org/website/South_Dakota/viewer.htm">South Dakota</option>
-<option value="http://historical-county.newberry.org/website/South_Carolina/viewer.htm">South Carolina</option>
-<option value="http://historical-county.newberry.org/website/Tennessee/viewer.htm">Tennessee</option>
-<option value="http://historical-county.newberry.org/website/Texas/viewer.htm">Texas</option>
-<option value="http://historical-county.newberry.org/website/Utah/viewer.htm">Utah</option>
-<option value="http://historical-county.newberry.org/website/Vermont/viewer.htm">Vermont</option>
-<option value="http://historical-county.newberry.org/website/Virginia/viewer.htm">Virginia</option>
-<option value="http://historical-county.newberry.org/website/Washington/viewer.htm">Washington</option>
-<option value="http://historical-county.newberry.org/website/West_Virginia/viewer.htm">West Virginia</option>
-<option value="http://historical-county.newberry.org/website/Wisconsin/viewer.htm">Wisconsin</option>
-<option value="http://historical-county.newberry.org/website/Wyoming/viewer.htm">Wyoming</option>
-</select>
-</form>
-<form id="metadataform" action="">
-<select name="dropdownoption" onchange="surfto(this.form)" > 
-<option value="">Metadata</option>
-<option value="../documents/AL_Metadata1.htm">Alabama</option>
-<option value="../documents/AK_Metadata1.htm">Alaska</option>
-<option value="../documents/AZ_Metadata1.htm">Arizona</option>
-<option value="../documents/AR_Metadata1.htm">Arkansas</option>
-<option value="../documents/CA_Metadata1.htm">California</option>
-<option value="../documents/CO_Metadata1.htm">Colorado</option>
-<option value="../documents/CT_Metadata1.htm">Connecticut</option>
-<option value="../documents/DT_Metadata1.htm">Dakota Territory</option>
-<option value="../documents/DE_Metadata1.htm">Delaware</option>
-<option value="../documents/DC_Metadata1.htm">District of Columbia</option>
-<option value="../documents/FL_Metadata1.htm">Florida</option>
-<option value="../documents/GA_Metadata1.htm">Georgia</option>
-<option value="../documents/HI_Metadata1.htm">Hawaii</option>
-<option value="../documents/ID_Metadata1.htm">Idaho</option>
-<option value="../documents/IL_Metadata1.htm">Illinois</option>
-<option value="../documents/IN_Metadata1.htm">Indiana</option>
-<option value="../documents/IA_Metadata1.htm">Iowa</option>
-<option value="../documents/KS_Metadata1.htm">Kansas</option>
-<option value="../documents/KY_Metadata1.htm">Kentucky</option>
-<option value="../documents/LA_Metadata1.htm">Louisiana</option>
-<option value="../documents/ME_Metadata1.htm">Maine</option>
-<option value="../documents/MD_Metadata1.htm">Maryland</option>
-<option value="../documents/MA_Metadata1.htm">Massachusetts</option>
-<option value="../documents/MI_Metadata1.htm">Michigan</option>
-<option value="../documents/MN_Metadata1.htm">Minnesota</option>
-<option value="../documents/MS_Metadata1.htm">Mississippi</option>
-<option value="../documents/MO_Metadata1.htm">Missouri</option>
-<option value="../documents/MT_Metadata1.htm">Montana</option>
-<option value="../documents/NE_Metadata1.htm">Nebraska</option>
-<option value="../documents/NV_Metadata1.htm">Nevada</option>
-<option value="../documents/NH_Metadata1.htm">New Hampshire</option>
-<option value="../documents/NJ_Metadata1.htm">New Jersey</option>
-<option value="../documents/NM_Metadata1.htm">New Mexico</option>
-<option value="../documents/NY_Metadata1.htm">New York</option>
-<option value="../documents/NC_Metadata1.htm">North Carolina</option>
-<option value="../documents/ND_Metadata1.htm">North Dakota</option>
-<option value="../documents/OH_Metadata1.htm">Ohio</option>
-<option value="../documents/OK_Metadata1.htm">Oklahoma</option>
-<option value="../documents/OR_Metadata1.htm">Oregon</option>
-<option value="../documents/PA_Metadata1.htm">Pennsylvania</option>
-<option value="../documents/RI_Metadata1.htm">Rhode Island</option>
-<option value="../documents/SC_Metadata1.htm">South Carolina</option>
-<option value="../documents/SD_Metadata1.htm">South Dakota</option>
-<option value="../documents/TN_Metadata1.htm">Tennessee</option>
-<option value="../documents/TX_Metadata1.htm">Texas</option>
-<option value="../documents/UT_Metadata1.htm">Utah</option>
-<option value="../documents/VT_Metadata1.htm">Vermont</option>
-<option value="../documents/VA_Metadata1.htm">Virginia</option>
-<option value="../documents/WA_Metadata1.htm">Washington</option>
-<option value="../documents/WV_Metadata1.htm">West Virginia</option>
-<option value="../documents/WI_Metadata1.htm">Wisconsin</option>
-<option value="../documents/WY_Metadata1.htm">Wyoming</option>	   
-</select>
-</form>	
 </div>
+<div id="page">
+<div id="interior-header">
+<h2>Indiana</h2>
 </div>
-<div id="pagecontent">
-<h2>State Page</h2>
 <div id="pageinset">
 <p><img src="../images/statepages/Indiana.gif" alt="Image of Indiana" /></p>
 <p class="caption">92 Counties</p>
 </div>
-<div id="pagenav">
+<div id="pagecontent">
 <ul>
-<li><a href="#interactivemap">Interactive Map</a></li>
-<li><a href="#countyindex">Index of County and Equivalents</a></li>
-<li><a href="#consolidatedchrono">Consolidated Chronology</a></li>
-<li><a href="#individualchrono">Individual County Chronologies</a></li>
-<li><a href="#biblio">Bibliography and Sources</a></li>
-<li><a href="#histcommentary">Historical Commentary</a></li>
-<li><a href="#metadatasumm">Metadata - Summary Form</a></li>
-<li><a href="#metadatafull">Metadata - Full FGDC Form</a></li>
-<li><a href="#gisfiles">Download GIS Files</a></li>
-<li><a href="#kmzfile">Download KMZ Files</a></li>
-<li><a href="#pdffile">Download PDF Files</a></li>
-</ul>
-</div>
-<div id="content">
-<ul>
-<li class="heading"><a name="interactivemap"></a><a href="http://historical-county.newberry.org/website/Indiana/viewer.htm" title="Interactive Map Viewer">View Interactive Map</a></li>
-<li class="description"> Maps and text covering the historical boundaries, names, organization, and attachments of every county, extinct county, and unsuccessful county proposal from the creation of the first county through 31 December 2000. Choose a date (day, month, and year) to view historical county configurations against the modern county network. Use the toolbar to zoom, pan, measure, view descriptions and citations, or print a desired map. Use the Help button on top right of the interactive map frame to read full descriptions of how to use the layers and tools on the interactive map site.</li>
-<li class="heading"><a name="countyindex"></a><a href="../documents/IN_County_Index.htm" title="County Index"> View Index of Counties and Equivalents</a></li>
-<li class="description"> Complete index of every county, county equivalent, or other area relevant to the evolution of evolution of state and county boundaries; includes extinct and proposed counties, non-county areas, and provides cross references for name changes, and hyperlinks to corresponding entries from the Individual County Chronologies. Also accessible from the County Index link at the bottom of the interactive map frame.</li>
-<li class="heading"><a name="consolidatedchrono"></a><a href="../documents/IN_Consolidated_Chronology.htm#Consolidated_Chronology" title="Consolidated Chronology">View Consolidated Chronology of State and County Boundaries</a></li>
-<li class="description"> Organizes the historical data chronologically, combining all the county events into a single composite entry for each date. Each entry is followed by a citation to the primary source(s) used to determine the change. Also accessible from the Chronologies link at the bottom of the interactive map frame.</li>
-<li class="heading"><a name="individualchrono"></a><a href="../documents/IN_Individual_County_Chronologies.htm#Individual_County_Chronologies" title="Individual Chronology">View Individual County Chronologies</a></li>
-<li class="description"> Organizes the historical data alphabetically by county name with each entry covering all the changes to a single county or equivalent. Each entry is followed by a citation to the primary source(s) used to determine the change. Also accessible from the Chronologies link at the bottom of the interactive map frame.</li>              
-<li class="heading"><a name="biblio"></a><a href="../documents/IN_Bibliography.htm#Bibliography" title="Bibliography">View Bibliography and Sources</a></li>
-<li class="description"> Lists the primary and secondary sources found useful in the historical research of territorial, state, and county boundaries. Also accessible from the Supplemental Texts link at the bottom of the interactive map frame.</li>
-<li class="heading"><a name="histcommentary"></a><a href="../documents/IN_commentary.htm#Commentary" title="Historical Commentary">View Historical Commentary</a></li>
-<li class="description"> Commentary on the research problems, materials and dates that were remarkable or unusual in the process of historical compilation (Not every state requires a commentary). Also accessible from the Supplemental Texts link at the bottom of the interactive map frame.</li>
-<li class="heading"><a name="metadatasumm"></a><a href="../documents/IN_Metadata1.htm#Metadata1" title="Summary Metadata">View Metadata - Summary Form</a></li>
-<li class="description"> Single-page document providing information about the shapefile data used for the interactive map site and available for download. Includes: Project Description, Preferred Style for Citation, and Spatial Reference Information. Also available from the dropdown Quick Link in the navigation menu on each page, and from the Supplemental Texts link at the bottom of the interactive map frame.</li>
-<li class="heading"><a name="metadatafull"></a><a href="../documents/IN_Metadata2.htm#Metadata2" title="Full Metadata">View Metadata - Full FGDC Form</a></li>
-<li class="description"> Sixteen-page document providing complete information about the shapefile data used for the interactive map site and available for download. Includes: Identification and Citation Information (abstract of the project coverage, purpose, contents, and method of historical compilation), Data Quality Information (attribute and positional accuracy, historical and digital sources, step-by-step process descriptions), Spatial Data Organization Information, Spatial Reference Information, Entity and Attribute Information, Distribution and Metadata Reference Information. Also accessible from the Download Shapefiles page.</li>
-<li class="heading"><a name="gisfiles"></a><a href="../downloads/gis/IN_AtlasHCB.zip" title="Indiana GIS Files">Download Shapefiles for use with GIS Programs</a> (zip file)</li>
-<li class="description"> Full contents of the Atlas of Historical County Boundaries may be downloaded free of charge for use under the stipulations and constraints described in the <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons Deed">Creative Commons License.</a> Downloads a zipped folder containing the full dataset for the desired state. Contents include:
+<h3><a name="interactivemap"></a><a href="http://historical-county.newberry.org/website/Indiana/viewer.htm" title="Interactive Map Viewer">View Interactive Map</a></h3>
+<p> Maps and text covering the historical boundaries, names, organization, and attachments of every county, extinct county, and unsuccessful county proposal from the creation of the first county through 31 December 2000. Choose a date (day, month, and year) to view historical county configurations against the modern county network. Use the toolbar to zoom, pan, measure, view descriptions and citations, or print a desired map. Use the Help button on top right of the interactive map frame to read full descriptions of how to use the layers and tools on the interactive map site.</p>
+<h3><a name="countyindex"></a><a href="../documents/IN_County_Index.htm" title="County Index"> View Index of Counties and Equivalents</a></h3>
+<p> Complete index of every county, county equivalent, or other area relevant to the evolution of evolution of state and county boundaries; includes extinct and proposed counties, non-county areas, and provides cross references for name changes, and hyperlinks to corresponding entries from the Individual County Chronologies. Also accessible from the County Index link at the bottom of the interactive map frame.</p>
+<h3><a name="consolidatedchrono"></a><a href="../documents/IN_Consolidated_Chronology.htm#Consolidated_Chronology" title="Consolidated Chronology">View Consolidated Chronology of State and County Boundaries</a></h3>
+<p> Organizes the historical data chronologically, combining all the county events into a single composite entry for each date. Each entry is followed by a citation to the primary source(s) used to determine the change. Also accessible from the Chronologies link at the bottom of the interactive map frame.</p>
+<h3><a name="individualchrono"></a><a href="../documents/IN_Individual_County_Chronologies.htm#Individual_County_Chronologies" title="Individual Chronology">View Individual County Chronologies</a></h3>
+<p> Organizes the historical data alphabetically by county name with each entry covering all the changes to a single county or equivalent. Each entry is followed by a citation to the primary source(s) used to determine the change. Also accessible from the Chronologies link at the bottom of the interactive map frame.</li>              
+<h3><a name="biblio"></a><a href="../documents/IN_Bibliography.htm#Bibliography" title="Bibliography">View Bibliography and Sources</a></h3>
+<p> Lists the primary and secondary sources found useful in the historical research of territorial, state, and county boundaries. Also accessible from the Supplemental Texts link at the bottom of the interactive map frame.</p>
+<h3><a name="histcommentary"></a><a href="../documents/IN_commentary.htm#Commentary" title="Historical Commentary">View Historical Commentary</a></h3>
+<p> Commentary on the research problems, materials and dates that were remarkable or unusual in the process of historical compilation (Not every state requires a commentary). Also accessible from the Supplemental Texts link at the bottom of the interactive map frame.</p>
+<h3><a name="metadatasumm"></a><a href="../documents/IN_Metadata1.htm#Metadata1" title="Summary Metadata">View Metadata - Summary Form</a></h3>
+<p> Single-page document providing information about the shapefile data used for the interactive map site and available for download. Includes: Project Description, Preferred Style for Citation, and Spatial Reference Information. Also available from the dropdown Quick Link in the navigation menu on each page, and from the Supplemental Texts link at the bottom of the interactive map frame.</p>
+<h3><a name="metadatafull"></a><a href="../documents/IN_Metadata2.htm#Metadata2" title="Full Metadata">View Metadata - Full FGDC Form</a></h3>
+<p> Sixteen-page document providing complete information about the shapefile data used for the interactive map site and available for download. Includes: Identification and Citation Information (abstract of the project coverage, purpose, contents, and method of historical compilation), Data Quality Information (attribute and positional accuracy, historical and digital sources, step-by-step process descriptions), Spatial Data Organization Information, Spatial Reference Information, Entity and Attribute Information, Distribution and Metadata Reference Information. Also accessible from the Download Shapefiles page.</p>
+<h3><a name="gisfiles"></a><a href="../downloads/gis/IN_AtlasHCB.zip" title="Indiana GIS Files">Download Shapefiles for use with GIS Programs</a> (zip file)</h3>
+<p> Full contents of the Atlas of Historical County Boundaries may be downloaded free of charge for use under the stipulations and constraints described in the <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons Deed">Creative Commons License.</a> Downloads a zipped folder containing the full dataset for the desired state. Contents include:</p>
 <ol class="contents">
 <li>Historical Counties Shapefile (polygons) for all versions of the state's counties and county equivalents</li>
 <li>Small_Changes shapefile (point feature) for all changes too small to map otherwise [not all states include this file]</li>
@@ -252,12 +124,11 @@
 <li>Copies of all the historical chronologies, supplemental texts, and metadata forms listed above</li>
 <li>Copy of the free access Attribution-NonCommercial-ShareAlike Creative Commons License</li>
 </ol>
-</li>
-<li class="heading"><a name="kmzfile"></a><a href="../downloads/kmz/IN_HistCountiesKMZ.zip" title="Indiana KMZ File">Download KMZ File for use with Google Earth</a> (zip file)</li>
-<li class="description">Downloads a zipped folder containing Atlas data formatted to be used with Google Earth and Google Maps.</li>
-<li class="heading"><a name="pdffile"></a><a href="../downloads/pdf/IN_HistCountiesPDF.zip" title="Indiana KMZ File">Download PDF File</a> (zip file)</li>
-<li class="description">Downloads a zipped folder containing Atlas data for each county in a state formatted in a printer and reader friendly format.</li>
-</ul>
+<h3><a name="kmzfile"></a><a href="../downloads/kmz/IN_HistCountiesKMZ.zip" title="Indiana KMZ File">Download KMZ File for use with Google Earth</a> (zip file)</h3>
+<p>Downloads a zipped folder containing Atlas data formatted to be used with Google Earth and Google Maps.</p>
+<h3><a name="pdffile"></a><a href="../downloads/pdf/IN_HistCountiesPDF.zip" title="Indiana KMZ File">Download PDF File</a> (zip file)</h3>
+<p>Downloads a zipped folder containing Atlas data for each county in a state formatted in a printer and reader friendly format.</p>
+</div>
 </div>
 </div>
 <div id="footer">
@@ -267,9 +138,8 @@
 <li><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons"><img src="../images/cc.gif" alt="Creative Commons logo" title="Creative Commons Deed" /></a></li>
 </ul>
 <ul>
-<li><a href="../index.html" title="Home">Atlas of Historical County Boundaries</a></li>
+<li><a href="index.html" title="Home">Atlas of Historical County Boundaries</a></li>
 <li>Last updated: June 2011</li>
-<li>&nbsp;</li>
 <li> Contact us: <a href="http://www.newberry.org/scholl/centerstaff.html" title="Scholl Center">Scholl Center</a> &#124; scholl [at] newberry.org</li>
 </ul>
 </div>
