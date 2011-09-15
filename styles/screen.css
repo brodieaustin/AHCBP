@@ -51,6 +51,8 @@ table {
 body{
   width: 100%;
   font-family: Calibri, Arial, Helvetica, Verdana, sans-serif;
+  overflow-x: auto;
+  overflow-y: scroll;
 }
 
 p{
