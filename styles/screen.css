@@ -89,13 +89,17 @@ a:hover{
 }
 
 .caption{
-  padding: .5em 0;
+  padding: .5em 0 0 0;
   font-style: oblique;
 }
 
 .float-left{
   float: left;
   width: 35%;
+}
+
+.italics{
+  font-style: oblique;
 }
 
 
@@ -179,7 +183,7 @@ a:hover{
   margin: 1.5em auto;
 }
 
-#page #interior-header{
+#interior-header{
   padding: .25em 0;
 }
 
@@ -204,7 +208,7 @@ a:hover{
 #page #map{
   float: right;
   width: 65%;
-  padding: .8em 0;
+  padding: .5em 0;
 }
 
 #page h2{
@@ -226,7 +230,7 @@ a:hover{
   line-height: 160%
  }
  
- #pagecontent ol{
+#pagecontent ol{
    list-style-type: decimal;
    list-position: inside;
    padding-left: 4em;
@@ -235,6 +239,7 @@ a:hover{
 #pagecontent table th{
   text-align: left;
   padding: .5em 0;
+  border-bottom: 2px solid #000;
 }
 
 #pagecontent table .row-divider{
@@ -244,6 +249,10 @@ a:hover{
 #pagecontent table tr td{
   padding: .25em 0;
   vertical-align: top;
+}
+
+#pagecontent .contents{
+  border-top: 2px solid #000;
 }
 
 /*footer*/
