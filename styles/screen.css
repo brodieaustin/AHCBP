@@ -130,7 +130,7 @@ a:hover{
 }
 
 #header ul {
-  padding: 0em .1em 1em .25em;
+  padding: 0em .1em .5em .25em;
 }
 
 #header ul li{
@@ -170,7 +170,6 @@ a:hover{
 #navlist{
   width: 900px;
   margin: 1.5em auto .5em auto;
-  padding: .3em 0;
 }
 
 #navlist ul li{
@@ -185,14 +184,21 @@ a:hover{
   margin: 1.5em auto;
 }
 
-#interior-header{
-  padding: .25em 0;
-}
-
-#interior-header h2{
+#page h2{
   color: #108EBC;
   font-size: 1.5em;
-  padding: .15em;
+  padding: .5em 0;
+  font-weight: bold;
+}
+
+#page #map {
+  float: right;
+  width: 65%;
+  padding: .5em 0;
+}
+
+#page #interior-header{
+  padding: .25em 0;
 }
 
 .pageinset{
@@ -207,18 +213,6 @@ a:hover{
   text-align: center;
 }
 
-#page #map{
-  float: right;
-  width: 65%;
-  padding: .5em 0;
-}
-
-#page h2{
-  clear: both;
-  font-weight: bold;
-  padding: .5em 0;
-}
-
 #pagecontent{
   width: 100%;
 }
@@ -229,7 +223,8 @@ a:hover{
 }
 
 #pagecontent ul, #pagecontent ol{
-  line-height: 160%
+  line-height: 160%;
+  margin-bottom: 1em;
  }
  
 #pagecontent ol{
@@ -241,20 +236,23 @@ a:hover{
 #pagecontent table th{
   text-align: left;
   padding: .5em 0;
-  border-bottom: 2px solid #000;
+  color: #108EBC;
+  font-weight: bold;
+}
+
+#pagecontent table .link {
+  width: 20%;
+  text-align: right;
 }
 
 #pagecontent table .row-divider{
   padding: .5em 0;
 }
 
+
 #pagecontent table tr td{
   padding: .25em 0;
   vertical-align: top;
-}
-
-#pagecontent .contents{
-  border-top: 2px solid #000;
 }
 
 /*footer*/
@@ -262,7 +260,7 @@ a:hover{
   clear: both;
   width: 900px;
   height: 100%;
-  margin: 1em auto;
+  margin: 0 auto;
   padding: 1em 0 2em 0;
   font-size: .8em;
   color: #888888;
