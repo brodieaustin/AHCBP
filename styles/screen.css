@@ -87,7 +87,7 @@ a:hover{
 #selected{
   border-bottom: 3px solid #1080BC;
   font-weight: bold;
-  color: #888888;
+  color: #666;
 }
 
 .caption{
@@ -102,6 +102,12 @@ a:hover{
 
 .italics{
   font-style: oblique;
+}
+
+.clear{
+  margin:0;
+  padding:0;
+  line-height: 0;
 }
 
 
@@ -125,10 +131,6 @@ a:hover{
   font-weight: bold;
 }
 
-#header a:hover{
-  color: #108EBC;
-}
-
 #header ul {
   padding: 0em .1em .5em .25em;
 }
@@ -140,7 +142,7 @@ a:hover{
 }
 
 #header ul li a{
-  color: #888888;
+  color: #666;
   padding-right: 1em;
 }
 
@@ -162,7 +164,9 @@ a:hover{
 #statebox select{
   clear: both;
   float: right;
-  width: 60%;
+  width: 98%;
+  border: 1px solid #000;
+  background-color: #fff;
 }
 
 /*navbar*/
@@ -203,13 +207,25 @@ a:hover{
 
 .pageinset{
   width: 30%;
-  border: 2px solid #808080;
+  position: relative;
   float: right;
   margin: 0 0 2em 2em;
-  padding: .5em;
+  text-align: center;
+  border: 1px solid #c8c8c8;
+}
+
+.pageinset p{
+  margin: 0;
+  padding-bottom: 2em;
 }
 
 .pageinset .caption{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .5em 0;
+  background-color: #e8e8e8;
+  color: #666;
   text-align: center;
 }
 
@@ -255,20 +271,29 @@ a:hover{
   vertical-align: top;
 }
 
+#pagecontent .statelist{
+  width: 25%;
+  float: left;
+}
+
 /*footer*/
-#footer{
+#footer-wrapper{
   clear: both;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+#footer{
   width: 900px;
   height: 100%;
   margin: 0 auto;
   padding: 1em 0 2em 0;
   font-size: .8em;
-  color: #888888;
+  color: #000;
 }
 
 /*#footer p, #footer li, #footer a{
   font-size: .9em;
-  color: #888888;
+  color: #666;
 }*/
 
 #footer ul{
