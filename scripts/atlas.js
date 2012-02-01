@@ -8,8 +8,8 @@
         var link;
 	
         /* conditional statements to build link based on the link_type */
-        if (link_type == "state_page") {
-          link = location + "statepages/" + state.split(";")[1] + ".html";
+        if (link_type == "page") {
+          link = location + "pages/" + state.split(";")[1] + ".html";
         }
         else if (link_type== "map") {
           link = "http://historical-county.newberry.org/website/" + state.split(";")[1] + "/viewer.htm";
@@ -30,5 +30,6 @@
         if (link != ""){ 
           /*open the link in the same window*/ 
           window.open(link, "_self");
+          form["state_select"].value = "";
         }
       }
