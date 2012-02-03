@@ -8,7 +8,6 @@
 <meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
 <link type="text/css" rel="stylesheet" href="styles/screen.css" />
 <link type="text/css" rel="stylesheet" href="styles/statesmap.css" />
-<script type="text/javascript" src="scripts/atlas.js" language="JavaScript"></script>
 <style type="text/css">
 	#us, #videos{width: 44.44%; float: left; padding: .5em 1em; margin: 0 0 1em; border-top: 1px solid #c8c8c8;}
 	#us p, #videos p{margin-top: 1em;}
@@ -16,6 +15,25 @@
 	#videos div{width: 95.98%; margin: .5em auto; padding: .5em; background-color: #e8e8e8;}
 	#videos p.caption{font-size: .9em; color: #666;}
 </style>
+<script type="text/javascript" src="scripts/atlas.js" language="JavaScript"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		var vids = [["QEdDU3ho1oE","30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000."], 
+					["X7WzKaqCaV4","3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000."], 
+					["g5_j2UaOVDM","30-second animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000."], 
+					["9KDJzkqCyIo","3-minute animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000."],
+					["7-0lM1g9iSs","30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000."],
+					["jJ-0HzEgOd0","3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000."]];
+		var rnd = Math.floor(Math.random()*vids.length);
+		var youtube = "http://www.youtube.com/embed/" + vids[rnd][0];
+		var caption = vids[rnd][1];
+		console.log(youtube);
+		
+		document.getElementById("vid-frame").src = youtube;
+		document.getElementById("vid-caption").innerHTML = caption;
+		
+	}
+</script>
 </head>
 <body>
 	<div id="header-wrapper">
@@ -169,8 +187,8 @@
 			<div id="videos">
 				<h3>Boundary Animations</h3>
 				<div>
-					<iframe width="383" height="224" src="http://www.youtube.com/embed/QEdDU3ho1oE" frameborder="0" allowfullscreen></iframe>
-					<p class="caption">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000</p>
+					<iframe width="383" height="224" src="http://www.youtube.com/embed/7-0lM1g9iSs" frameborder="0" allowfullscreen id="vid-frame"></iframe>
+					<p class="caption" id="vid-caption"></p>
 				</div>
 				<p>View additional videos:</p>
 				<ul>
