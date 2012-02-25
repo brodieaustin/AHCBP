@@ -146,6 +146,11 @@ a:hover{
   padding-right: 1em;
 }
 
+#header ul li a:hover{
+  color: #108EBC;
+
+}
+
 #statebox{
   clear: both;
   float: right;
