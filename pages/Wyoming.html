@@ -4,10 +4,10 @@
 <head>
 <title>Atlas of Historical County Boundaries Project &#124; States | Wyoming</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="author" content="Brodie Austin" />
+<meta name="author" content="Atlas of Historical County Boundaries Project" />
 <meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
-<link type="text/css" rel="stylesheet" href="../styles/screen.css" />
-<script type="text/javascript" src="../scripts/atlas.js" language="JavaScript"></script>
+<link type="text/css" rel="stylesheet" href="../css/screen.css" />
+<script type="text/javascript" src="../js/atlas.js" language="JavaScript"></script>
 </head>
 <body>
 	<div id="header-wrapper">
@@ -16,7 +16,7 @@
 				<label><input type="radio" name="link_type" value="page" checked="checked" />Pages</label>
 				<label><input type="radio" name="link_type" value="map" />Maps</label>
 				<label><input type="radio" name="link_type" value="metadata" />Metadata</label>
-				<select name="state_select" onchange="followLink(this.form, '../')" >            
+				<select name="state_select" id="state_select" >            
 					<option value="">Select...</option>          
 					<option value="US;United_States">United States</option>
 					<option value="AL;Alabama">Alabama</option>
@@ -139,7 +139,6 @@
 			<ul>
 				<li><a href="../index.html" title="Home">Atlas of Historical County Boundaries</a></li>
 				<li> Contact us: scholl@newberry.org</li>
-				<li>Last updated: September 2011</li>
 			</ul>
 		</div><!--closing div for footer-->
 	</div><!--closing div for footer-wrapper-->
