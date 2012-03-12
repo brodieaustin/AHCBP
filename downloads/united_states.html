@@ -8,8 +8,9 @@
 	<meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
 	<link type="text/css" rel="stylesheet" href="../css/screen.css" />
 	<style type="text/css">
-		table{width: 66.6666667%; float: left; margin-right: 4em;}
-		div.sidebar{width: 23.5555556%; margin-top: 1.333333333em; padding: 1em; float: left; background-color: #e8e8e8; font-size: 75%;}
+		div#downloads{width: 66.6666667%; float: left; margin-right: 4em;}
+		table .cell-note{line-height: 1.5em; margin-left: .1em; font-size: 75%; color: #666; font-weight: normal; font-style: oblique;}
+		div.sidebar{width: 23.5555556%; margin-top: 1.333333333em; padding: 1em; float: right; background-color: #e8e8e8; font-size: 75%;}
 		div.sidebar ol{padding-left: 1.5em !important;}
 	</style>
 	<script type="text/javascript" src="../js/atlas.js" language="JavaScript"></script>
@@ -87,7 +88,7 @@
 	<div id="navlist">
 		<ul>
 			<li><a href="../index.html" title="Home">Home</a></li>
-			<li><a href="../downloadfiles.html" title="Download Files" id="selected">Download Files</a></li>
+			<li><a href="../downloads/index.html" title="Download Files" id="selected">Download Files</a></li>
 			<li><a href="../usingatlas.html" title="Using the Atlas">Using the Atlas</a></li>
 			<li><a href="../project.html" title="About the Project">About the Project</a></li>
 			<li><a href="../publications.html" title="Publications">Publications</a></li>
@@ -98,12 +99,109 @@
 			<h2>Download U.S. Files</h2>
 		</div><!--closing div for interior-header-->
 		<div id="pagecontent">
-			<div class="downloads">
-				<h3>State Downloads</h3>
-			</div>
-			<div class="downloads">
-				<h3>US Downloads</h3>
-			</div> 
+			<h3>US Historical Counties (1629-2000)</h3>
+			<div id="downloads">
+				<table>
+				<thead>
+					<tr>
+						<th>File</th>
+						<th class="link">GIS Files<br /><span class="cell-note">+AK/HI</span></th>
+						<th class="link">KMZ Files<br /><span class="cell-note">+AK/HI</span></th>
+						<th class="link">KMZ Files<br /><span class="cell-note">-AK/HI</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="label">Full file<br /><span class="cell-note">Not generalized</span></td>
+						<td class="link"><a href="#" title="Full file (not generalized) GIS File">503 MB</a></td>
+						<td class="link">N/A</td>
+						<td class="link">N/A</td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.0001 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.0001 degree tolerance) GIS File">224 MB</a></td>
+						<td class="link">N/A</td>
+						<td class="link">N/A</td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.001 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.001 degree tolerance) GIS File">52 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.001 degree tolerance) KMZ File">33 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.001 degree tolerance) KMZ File + AK/HI">46 MB</a></td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.01 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.01 degree tolerance) GIS File">9 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.01 degree tolerance) KMZ File">7 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.01 degree tolerance) KMZ File + AK/HI">10 MB</a></td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.05 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.05 degree tolerance) GIS File">4 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.05 degree tolerance) KMZ File">5 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.05 degree tolerance) KMZ File + AK/HI">5 MB</a></td>
+					</tr>
+				</tbody>
+				</table>
+				<div class="clear" style="clear: left;"></div>
+				<h3>US Historical States & Territories  (1783-2000)</h3>
+				<table>
+				<thead>
+					<tr>
+						<th>File</th>
+						<th class="link">GIS Files<br /><span class="cell-note">+AK/HI</span></th>
+						<th class="link">KMZ Files<br /><span class="cell-note">+AK/HI</span></th>
+						<th class="link">KMZ Files<br /><span class="cell-note">-AK/HI</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="label">Full file<br /><span class="cell-note">Not generalized</span></td>
+						<td class="link"><a href="#" title="Full file (not generalized) GIS File">110 MB </a></td>
+						<td class="link">N/A</td>
+						<td class="link">N/A </td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.0001 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.0001 degree tolerance) GIS File">53 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.0001 degree tolerance) KMZ File">28 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.0001 degree tolerance) KMZ File + AK/HI">33 MB</a></td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.001 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.001 degree tolerance) GIS File">14 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.001 degree tolerance) KMZ File">7 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.001 degree tolerance) KMZ File + AK/HI">10 MB</a></td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.01 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.01 degree tolerance) GIS File">2 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.01 degree tolerance) KMZ File">1 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.01 degree tolerance) KMZ File + AK/HI">2 MB</a></td>
+					</tr>
+					<tr>
+						<td class="label">Generalized<br /><span class="cell-note">.05 degree tolerance</span></td>
+						<td class="link"><a href="#" title="Generalized (.05 degree tolerance) GIS File">.6 MB</a></td>
+						<td class="link"><a href="#" title="Generalized (.05 degree tolerance) KMZ File">.5 MB </a></td>
+						<td class="link"><a href="#" title="Generalized (.05 degree tolerance) KMZ File + AK/HI">1 MB</a></td>
+					</tr>
+				</tbody>
+				</table>
+			</div><!--closing div for downloads-->
+			<div class="sidebar">
+				<h3>GIS Files</h3> 
+					<p>Download a zipped folder containing the full dataset for the selected file type. Each zipped folder contains the following files:</p>
+					<ol>
+						<li>Shapefile of US Historical counties or US historical States & Territories</li>
+						<li>Metadata (Summary Form)</li>
+						<li>Full FGDC metadata for the selected shapefile</li>
+						<li>Copy of the free access Attribution-NonCommercial-ShareAlike Creative Commons License</li>
+						<li>Read Me file describing how to use the shapefile within ESRI's ArcGIS application</li>
+					</ol>
+					<p>The Full files contain all the detail incorporated in the original state boundary files, and align very closely with the modern county boundaries in Google Earth and ESRI products. However, since the full files are very large, they may not always display rapidly in web applications.</p>
+				<h3>KMZ Files</h3>
+					<p>Download a zipped folder of Atlas data formatted to be used with Google Earth and Google Maps. </p>
+			</div><!--closing div for sidebar"-->
 		</div><!--closing div for page-content-->
 	</div><!--closing div for page-->
 	<div id="footer-wrapper">

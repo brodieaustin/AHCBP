@@ -216,7 +216,7 @@ a:hover{
   float: right;
   margin: 0 0 2em 2em;
   text-align: center;
-  border: 1px solid #c8c8c8;
+  background-color: #f8f8f8;
 }
 
 .pageinset p{
@@ -224,13 +224,16 @@ a:hover{
   padding-bottom: 2em;
 }
 
+.pageinset img{
+  margin: .7em 0 1em 0;
+  background-color: #fff;
+}
+
 .pageinset .caption{
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: .5em 0;
-  background-color: #e8e8e8;
-  color: #666;
   text-align: center;
 }
 
@@ -262,7 +265,7 @@ a:hover{
 }
 
 #pagecontent table .link {
-  width: 25%;
+  width: 22%;
   text-align: right;
 }
 
