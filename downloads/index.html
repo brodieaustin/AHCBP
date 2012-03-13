@@ -7,24 +7,25 @@
 	<meta name="author" content="Atlas of Historical Country Boundaries Project" />
 	<meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
 	<link type="text/css" rel="stylesheet" href="../css/screen.css" />
+	<script type="text/javascript" src="../js/atlas.js" language="JavaScript"></script>
 	<style type="text/css">
-		div.download-link{float: left; width: 42.8888889%; margin: 2em 2em 4em 2em; background-color: #f8f8f8; text-align: center;}
+		div.download-link{float: left; width: 42.8888889%; margin: 2em 2em 4em 2em; text-align: center;}
 		div.download-link a{display: block; position: relative; width: 89.6373057%; height: 100%; padding: 1.25em; }
-		div.download-link a:hover{background-color: #e8e8e8;}
-		div.download-link img{margin-bottom: 2em; padding-bottom: 1em; background-color: #fff;}
+		div.download-link a:hover{background-color: #d6d7c7;}
+		div.download-link img{margin-bottom: 2em; padding-bottom: 1em;}
 		div.download-link h3{position: absolute; bottom: 0; left: 0; width: 100%; padding: 1em;}
 	</style>
-	<script type="text/javascript" src="../js/atlas.js" language="JavaScript"></script>
 </head>
 <body>
 	<div id="header-wrapper">
 		<div id="header">
 			<form id="statebox">
 				<label><input type="radio" name="link_type" value="page" checked="checked" />Pages</label>
-				<label><input type="radio" name="link_type" value="map" />Interactive Maps</label>
+				<label><input type="radio" name="link_type" value="map" />Maps</label>
 				<label><input type="radio" name="link_type" value="metadata" />Metadata</label>
 				<select name="state_select" id="state_select" >            
-					<option value="">Select a state...</option>          
+					<option value="">Select...</option>          
+					<option value="US;United_States">United States</option>          
 					<option value="AL;Alabama">Alabama</option>
 					<option value="AK;Alaska">Alaska</option>
 					<option value="AZ;Arizona">Arizona</option>
@@ -109,7 +110,7 @@
 			<div class="download-link">
 				<a href="united_states.html" title="U.S. Downloads">
 					<h3>U.S. Downloads</h3>
-					<img src="../images/usmap.png" alt="US map [graphic]" />
+					<img src="../images/usmap.gif" alt="US map [graphic]" />
 				</a>
 			</div> 
 		</div><!--closing div for page-content-->
@@ -119,11 +120,13 @@
 			<ul id="rights">
 				<li><a href="http://www.newberry.org" title="Newberry Library"><img src="../images/newberrylogo.gif" alt="Newberry Logo" title="The Newberry Library" /></a></li>
 				<li><a href="http://www.neh.gov/" title="NEH"><img src="../images/nehlogo.gif" alt="NEH Logo" title="National Endowment for the Humanities" /></a></li>
-				<li><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons"><img src="../images/cc.gif" alt="Creative Commons logo" title="Creative Commons Deed" /></a></li>
 			</ul>
 			<ul>
 				<li><a href="index.html" title="Home">Atlas of Historical County Boundaries</a></li>
 				<li> Contact us: scholl@newberry.org</li>
+			</ul>
+			<ul>
+				<li><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons"><img src="../images/cc.png" alt="Creative Commons logo" title="Creative Commons Deed" /></a></li>
 			</ul>
 		</div><!--closing div for footer-->
 	</div><!--closing div for footer-wrapper-->

@@ -9,7 +9,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/screen.css" />
 	<style type="text/css">
 		table{width: 66.6666667%; float: left; margin-right: 4em;}
-		div.sidebar{width: 23.5555556%; margin-top: 1.333333333em; padding: 1em; float: left; background-color: #e8e8e8; font-size: 75%;}
+		div.sidebar{width: 23.5555556%; margin-top: 1.333333333em; padding: 1em; float: left; border: 1px solid #000; font-size: 75%;}
 		div.sidebar ol{padding-left: 1.5em !important;}
 	</style>
 	<script type="text/javascript" src="../js/atlas.js" language="JavaScript"></script>
@@ -19,10 +19,11 @@
 		<div id="header">
 			<form id="statebox">
 				<label><input type="radio" name="link_type" value="page" checked="checked" />Pages</label>
-				<label><input type="radio" name="link_type" value="map" />Interactive Maps</label>
+				<label><input type="radio" name="link_type" value="map" />Maps</label>
 				<label><input type="radio" name="link_type" value="metadata" />Metadata</label>
 				<select name="state_select" id="state_select" >            
-					<option value="">Select a state...</option>          
+					<option value="">Select...</option>          
+					<option value="US;United_States">United States</option>         
 					<option value="AL;Alabama">Alabama</option>
 					<option value="AK;Alaska">Alaska</option>
 					<option value="AZ;Arizona">Arizona</option>
@@ -502,11 +503,13 @@
 			<ul id="rights">
 				<li><a href="http://www.newberry.org" title="Newberry Library"><img src="../images/newberrylogo.gif" alt="Newberry Logo" title="The Newberry Library" /></a></li>
 				<li><a href="http://www.neh.gov/" title="NEH"><img src="../images/nehlogo.gif" alt="NEH Logo" title="National Endowment for the Humanities" /></a></li>
-				<li><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons"><img src="../images/cc.gif" alt="Creative Commons logo" title="Creative Commons Deed" /></a></li>
 			</ul>
 			<ul>
 				<li><a href="index.html" title="Home">Atlas of Historical County Boundaries</a></li>
 				<li> Contact us: scholl@newberry.org</li>
+			</ul>
+			<ul>
+				<li><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="Creative Commons"><img src="../images/cc.png" alt="Creative Commons logo" title="Creative Commons Deed" /></a></li>
 			</ul>
 		</div><!--closing div for footer-->
 	</div><!--closing div for footer-wrapper-->
