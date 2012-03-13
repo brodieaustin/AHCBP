@@ -76,7 +76,7 @@ tr{
 
 a{
   text-decoration: none;
-  color: #000000;
+  color: #000;
   font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ a:hover{
   color: #108EBC;
 }
 
-#selected{
+a#selected{
   border-bottom: 3px solid #1080BC;
   font-weight: bold;
   color: #666;
@@ -216,7 +216,7 @@ a:hover{
   float: right;
   margin: 0 0 2em 2em;
   text-align: center;
-  background-color: #f8f8f8;
+  border: 1px solid #000;
 }
 
 .pageinset p{
@@ -226,7 +226,6 @@ a:hover{
 
 .pageinset img{
   margin: .7em 0 1em 0;
-  background-color: #fff;
 }
 
 .pageinset .caption{
@@ -244,6 +243,13 @@ a:hover{
 #pagecontent h3{
   font-weight: bold;
   padding: 1em 0 1em 0;
+}
+
+#pagecontent h4{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #666;
+  font-style: oblique;
 }
 
 #pagecontent ul, #pagecontent ol{
@@ -289,7 +295,7 @@ a:hover{
   clear: both;
   width: 100%;
   padding-bottom: 5em;
-  background-color: #f8f8f8;
+  border-top: 1px solid #000;
 }
 #footer{
   width: 900px;
