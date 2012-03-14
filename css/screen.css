@@ -160,7 +160,6 @@ a#selected{
 
 #statebox label{
   float: left;
-  font-style: oblique;
   font-size: .8em;
   color: inherit;
   padding: .25em;
@@ -172,6 +171,10 @@ a#selected{
   width: 98%;
   border: 1px solid #000;
   background-color: #fff;
+}
+
+#statebox{
+  display: none;
 }
 
 /*navbar*/
@@ -236,6 +239,7 @@ a#selected{
   text-align: center;
 }
 
+/*pagecontent styles*/
 #pagecontent{
   width: 100%;
 }
@@ -252,6 +256,7 @@ a#selected{
   font-style: oblique;
 }
 
+/*lists*/
 #pagecontent ul, #pagecontent ol{
   line-height: 160%;
   margin-bottom: 1em;
@@ -263,6 +268,7 @@ a#selected{
    padding-left: 4em;
 }
  
+/*tables*/
 #pagecontent table th{
   text-align: left;
   padding: .5em 0;
@@ -285,16 +291,148 @@ a#selected{
   vertical-align: top;
 }
 
+#pagecontent table .cell-note{
+  line-height: 1.5em;
+   margin-left: .1em;
+   font-size: 75%;
+   color: #666;
+   font-weight: normal;
+}
+
+/*special class for tables on state/us pages*/
+#pagecontent table.pages{
+  width: 70%;
+  margin-left: 3em;
+}
+
+/*for index and slider*/
+#pagecontent #us, #pagecontent #videos{
+   width: 44.44%;
+   float: left;
+   padding: .5em 1em;
+   margin: 0 0 1em;
+   border-top: 1px solid #000;
+}
+
+#pagecontent #us p, #pagecontent #videos p{
+   margin-top: 1em;
+}
+
+#pagecontent #us img{
+   margin-top: .5em;
+   padding-top: .5em;
+}
+
+#pagecontent #videos ul li {
+   width: 95.98%;
+   margin: .5em auto;
+   padding: .5em;
+   background-color: #d6d7c7;
+}
+
+#pagecontent #videos p.caption{
+   font-size: .9em;
+   text-align: center;
+}
+
+#pagecontent #videos a{
+   font-weight: normal;
+}
+
+#pagecontent #mapvids{
+   display: none;
+}
+
+/*styles for slider classes */
+.bx-wrapper{
+   padding-top: 0;
+   padding-bottom: 2em;
+}
+
+.bx-pager{
+   float: left;
+   width: 70%;
+   padding-top: .75em;
+   padding-left: 1em;
+}
+
+.bx-start{
+   float: right;
+   text-align: right;
+   padding-top: .75em;
+   padding-right: 1em;
+}
+
+.pager-link{
+   margin-right: 1em;
+}
+
+.pager-active{
+   font-weight: bold;
+   color: #pagecontent #666;
+}
+
+/*for statelist page*/
 #pagecontent .statelist{
   width: 25%;
   float: left;
+}
+
+/*for download index page*/
+#pagecontent div.download-link{  
+  float: left;
+  width: 42.8888889%;
+  margin: 2em 2em 4em 2em;
+  text-align: center;
+}
+
+#pagecontent div.download-link a{
+  display: block;
+  position: relative;
+  width: 89.6373057%;
+  height: 100%;
+  padding: 1.25em;
+}
+
+#pagecontent div.download-link img{
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+#pagecontent div.download-link h3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+}
+
+/*for download pages*/
+
+#pagecontent div#downloads{
+  width: 66.6666667%;
+   float: left;
+   margin-right: 4em;
+}
+
+#pagecontent div.sidebar{
+  width: 23.5555556%;
+   margin-top: 1.333333333em;
+   padding: 1em;
+   float: right;
+   border: 1px solid #000;;
+   font-size: 75%;
+}
+
+div.sidebar ol{
+  padding-left: 1.5em !important;
 }
 
 /*footer*/
 #footer-wrapper{
   clear: both;
   width: 100%;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   border-top: 1px solid #000;
 }
 #footer{
