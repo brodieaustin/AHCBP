@@ -1,4 +1,7 @@
 	window.onload = function(){
+		var statebox = document.getElementById("statebox");
+		statebox.style.display = "block";
+		
 		var dropdown = document.getElementById("state_select");
 		dropdown.onclick = followLink;
 	};
@@ -11,6 +14,7 @@
 	      /*open the link in the same window*/ 
 	      window.open(link, "_self");
     	  form["state_select"].value = "";
+    	  form["link_type"][0].checked = true;
     	}
   	};
   
