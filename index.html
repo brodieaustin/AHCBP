@@ -2,40 +2,28 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>Atlas of Historical County Boundaries Project &#124; Home</title>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="author" content="Atlas of Historical County Boundaries Project" />
-<meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
-<link type="text/css" rel="stylesheet" href="css/screen.css" />
-<link type="text/css" rel="stylesheet" href="css/statesmap.css" />
-<style type="text/css">
-	#us, #videos{width: 44.44%; float: left; padding: .5em 1em; margin: 0 0 1em; border-top: 1px solid #000;}
-	#us p, #videos p{margin-top: 1em;}
-	#us img{margin-top: .5em; padding-top: .5em;}
-	#videos ul li {width: 95.98%; margin: .5em auto; padding: .5em; background-color: #d6d7c7;}
-	#videos p.caption{font-size: .9em; text-align: center;}
-	#videos a{font-weight: normal;}
-	.bx-wrapper{padding-top: 0; padding-bottom: 2em;}
-	.bx-pager{float: left; width: 70%; padding-top: .75em; padding-left: 1em;}
-	.bx-start{float: right; text-align: right; padding-top: .75em; padding-right: 1em;}
-	.pager-link{margin-right: 1em;}
-	.pager-active{font-weight: bold; color: #666;}
-</style>
-<script type="text/javascript" src="js/jquery-1.7.1.min.js" language="Javascript"></script>
-<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
-<script type="text/javascript" src="js/atlas.js" language="JavaScript"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#mapvids").bxSlider({
-			auto: true,
-			autoControls: true,
-			autoHover: true,
-			controls: false,
-		    pager: true,
-		    pause: 4000,
+	<title>Home &#124; Atlas of Historical County Boundaries Project</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Atlas of Historical County Boundaries Project" />
+	<meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
+	<link type="text/css" rel="stylesheet" href="css/screen.css" />
+	<link type="text/css" rel="stylesheet" href="css/statesmap.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js" language="Javascript"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
+	<script type="text/javascript" src="js/atlas.js" language="JavaScript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#mapvids').fadeIn(500);
+			$("#mapvids").bxSlider({
+				auto: true,
+				autoControls: true,
+				autoHover: true,
+				controls: false,
+				pager: true,
+				pause: 4000,
+			});
 		});
-	});
-</script>
+	</script>
 </head>
 <body>
 	<div id="header-wrapper">
@@ -188,8 +176,18 @@
 			</div><!--closing div for us-->
 			<div id="videos">
 				<h3>Boundary Animations</h3>
+				<noscript>
+					<ul>
+					<li><a href="http://www.youtube.com/embed/QEdDU3ho1oE" frameborder="0" allowfullscreen id="vid-frame">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</a></li>
+					<li><a href="http://www.youtube.com/embed/X7WzKaqCaV4" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.</a></li>
+					<li><a href="http://www.youtube.com/embed/g5_j2UaOVDM" frameborder="0" allowfullscreen id="vid-frame">30-second animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000.</a></li>
+					<li><a href="http://www.youtube.com/embed/9KDJzkqCyIo" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000.</a></li>
+					<li><a href="http://www.youtube.com/embed/7-0lM1g9iSs" frameborder="0" allowfullscreen id="vid-frame">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</a></li>
+					<li><a href="http://www.youtube.com/embed/jJ-0HzEgOd0" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.</li>
+					</ul>
+				</noscript>
 				<ul id="mapvids">
-					<li>
+					<li class="first">
 						<iframe width="383" height="224" src="http://www.youtube.com/embed/QEdDU3ho1oE" frameborder="0" allowfullscreen id="vid-frame"></iframe>
 						<p class="caption">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</p>
 					</li>
