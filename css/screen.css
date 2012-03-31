@@ -87,7 +87,7 @@ a:hover{
 a#selected{
   border-bottom: 3px solid #1080BC;
   font-weight: bold;
-  color: #666;
+  color: #888;
 }
 
 .caption{
@@ -142,7 +142,7 @@ a#selected{
 }
 
 #header ul li a{
-  color: #666;
+  color: #888;
   padding-right: 1em;
 }
 
@@ -161,7 +161,6 @@ a#selected{
 #statebox label{
   float: left;
   font-size: .8em;
-  color: inherit;
   padding: .25em;
 }
 
@@ -252,7 +251,7 @@ a#selected{
 #pagecontent h4{
   margin-top: 1em;
   margin-bottom: .5em;
-  color: #666;
+  color: #888;
   font-style: oblique;
 }
 
@@ -295,7 +294,7 @@ a#selected{
   line-height: 1.5em;
    margin-left: .1em;
    font-size: 75%;
-   color: #666;
+   color: #888;
    font-weight: normal;
 }
 
@@ -369,7 +368,7 @@ a#selected{
 
 .pager-active{
    font-weight: bold;
-   color: #pagecontent #666;
+   color: #pagecontent #888;
 }
 
 /*for statelist page*/
@@ -410,13 +409,13 @@ a#selected{
 /*for download pages*/
 
 #pagecontent div#downloads{
-  width: 66.6666667%;
+  width: 600px;
    float: left;
    margin-right: 4em;
 }
 
 #pagecontent div.sidebar{
-  width: 23.5555556%;
+  width: 210px;
    margin-top: 1.333333333em;
    padding: 1em;
    float: right;
@@ -445,7 +444,7 @@ div.sidebar ol{
 
 /*#footer p, #footer li, #footer a{
   font-size: .9em;
-  color: #666;
+  color: #888;
 }*/
 
 #footer ul{
