@@ -13,15 +13,15 @@
 	<script type="text/javascript" src="js/atlas.js" language="JavaScript"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#mapvids').fadeIn(500);
-			$("#mapvids").bxSlider({
-				auto: true,
+			$('#mapvids').hide();
+			/*$("#mapvids").bxSlider({
+				auto: false,
 				autoControls: true,
 				autoHover: true,
 				controls: false,
 				pager: true,
 				pause: 4000,
-			});
+			});*/
 		});
 	</script>
 </head>
@@ -76,8 +76,8 @@
 					<option value="OR;Oregon">Oregon</option>
 					<option value="PA;Pennsylvania">Pennsylvania</option>
 					<option value="RI;Rhode_Island">Rhode Island</option>
-					<option value="SD;South_Dakota">South Dakota</option>
 					<option value="SC;South_Carolina">South Carolina</option>
+					<option value="SD;South_Dakota">South Dakota</option>
 					<option value="TN;Tennessee">Tennessee</option>
 					<option value="TX;Texas">Texas</option>
 					<option value="UT;Utah">Utah</option>
@@ -172,7 +172,7 @@
 			<div id="us" style="margin-right: 1em;">
 				<h3>National Data</h3>
 				<a href="pages/United_States.html"><img src="images/usmap.gif" alt="United States Map" /></a>
-				<p>Click on the national map to see all of the Atlas' content related to the nation at one view, regardless of state borders. Like the state map above this dataset includes  interactive maps, shapefiles, chronologies, and metadata.</p>
+				<p>Click on the national map to see all of the Atlas' content related to the nation at one view. Like the state map above this content includes  interactive maps, shapefiles, and metadata.</p>
 			</div><!--closing div for us-->
 			<div id="videos">
 				<h3>Boundary Animations</h3>
@@ -186,7 +186,7 @@
 					<li><a href="http://www.youtube.com/embed/jJ-0HzEgOd0" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.</li>
 					</ul>
 				</noscript>
-				<ul id="mapvids">
+				<!--<ul id="mapvids">
 					<li class="first">
 						<iframe width="383" height="224" src="http://www.youtube.com/embed/QEdDU3ho1oE" frameborder="0" allowfullscreen id="vid-frame"></iframe>
 						<p class="caption">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</p>
@@ -211,7 +211,7 @@
 						<iframe width="383" height="224" src="http://www.youtube.com/embed/jJ-0HzEgOd0" frameborder="0" allowfullscreen id="vid-frame"></iframe>
 						<p class="caption">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.
 					</li>
-				</ul>
+				</ul>-->
 			</div><!--closing div for videos-->
 		</div><!--closing div for pagecontent-->
 	</div><!--closing div for page-->
