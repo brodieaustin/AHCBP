@@ -9,8 +9,10 @@
 	function followLink(){
 	  	var form = document.getElementById("statebox");
 	    var link = makeLink(form);
+	    
+	    console.log(link);
 
-	    if (link != ""){ 
+	    if (link.search('undefined') == -1){ 
 	      /*open the link in the same window*/ 
 	      window.open(link, "_self");
     	  form["state_select"].value = "";
