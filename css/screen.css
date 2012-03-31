@@ -56,7 +56,7 @@ body{
 }
 
 p{
-  line-height: 140%;
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -97,7 +97,8 @@ a#selected{
 
 .float-left{
   float: left;
-  width: 35%;
+  width: 284px;
+  margin-right: 1em;
 }
 
 .italics{
@@ -154,6 +155,7 @@ a#selected{
 #statebox{
   clear: both;
   float: right;
+  width: 202px;
   color: inherit;
   padding: .25em .25em 0 0;
 }  
@@ -167,7 +169,7 @@ a#selected{
 #statebox select{
   clear: both;
   float: right;
-  width: 98%;
+  width: 198px;
   border: 1px solid #000;
   background-color: #fff;
 }
@@ -204,7 +206,7 @@ a#selected{
 
 #page #map {
   float: right;
-  width: 65%;
+  width: 600px;
   padding: .5em 0;
 }
 
@@ -213,9 +215,10 @@ a#selected{
 }
 
 .pageinset{
-  width: 30%;
+  width: 270px;
   position: relative;
   float: right;
+  clear: right;
   margin: 0 0 2em 2em;
   text-align: center;
   border: 1px solid #000;
@@ -227,7 +230,8 @@ a#selected{
 }
 
 .pageinset img{
-  margin: .7em 0 1em 0;
+  width: 87%%;
+  margin: 1em;
 }
 
 .pageinset .caption{
@@ -236,6 +240,10 @@ a#selected{
   width: 100%;
   padding: .5em 0;
   text-align: center;
+}
+
+.no-border{
+  border: 0;
 }
 
 /*pagecontent styles*/
@@ -257,7 +265,7 @@ a#selected{
 
 /*lists*/
 #pagecontent ul, #pagecontent ol{
-  line-height: 160%;
+  line-height: 1.5em;
   margin-bottom: 1em;
  }
  
@@ -293,20 +301,20 @@ a#selected{
 #pagecontent table .cell-note{
   line-height: 1.5em;
    margin-left: .1em;
-   font-size: 75%;
+   font-size: .75em;
    color: #888;
    font-weight: normal;
 }
 
 /*special class for tables on state/us pages*/
 #pagecontent table.pages{
-  width: 70%;
+  width: 630px;
   margin-left: 3em;
 }
 
 /*for index and slider*/
 #pagecontent #us, #pagecontent #videos{
-   width: 44.44%;
+   width: 400px;
    float: left;
    padding: .5em 1em;
    margin: 0 0 1em;
@@ -380,7 +388,7 @@ a#selected{
 /*for download index page*/
 #pagecontent div.download-link{  
   float: left;
-  width: 42.8888889%;
+  width: 385px;
   margin: 2em 2em 4em 2em;
   text-align: center;
 }
