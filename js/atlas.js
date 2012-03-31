@@ -2,8 +2,8 @@
 		var statebox = document.getElementById("statebox");
 		statebox.style.display = "block";
 		
-		var dropdown = document.getElementById("state_select");
-		dropdown.onclick = followLink;
+		var gototstate= document.getElementById("gotostate");
+		gotostate.onclick = followLink;
 	};
   
 	function followLink(){
