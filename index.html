@@ -6,22 +6,48 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="Atlas of Historical County Boundaries Project" />
 	<meta name="keywords" content="newberry, library, atlas, historical, county, boundaries, shapefiles, gis, kmz, google earth" />
-	<link type="text/css" rel="stylesheet" href="css/screen.css" />
-	<link type="text/css" rel="stylesheet" href="css/statesmap.css" />
+	<link rel="stylesheet" href="css/screen.css" type="text/css" />
+	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/statesmap.css" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js" language="Javascript"></script>
 	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
+	
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/atlas.js" language="JavaScript"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#mapvids').hide();
-			/*$("#mapvids").bxSlider({
-				auto: false,
+			var slider = $('#mapvids').bxSlider({
+				auto: true,
 				autoControls: true,
 				autoHover: true,
+				captions: true,
 				controls: false,
 				pager: true,
-				pause: 4000,
-			});*/
+				pause: 4000
+			});
+			
+			$('.various').fancybox({
+				maxWidth	: 600,
+				maxHeight	: 500,
+				fitToView	: false,
+				width		: '70%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none',
+				helpers : {
+    				title : {
+    				type : 'inside'
+    				}
+    			}
+			});
+			
+			$('.various').click(function(){
+				slider.stopShow();
+			});
 		});
 	</script>
 </head>
@@ -177,42 +203,32 @@
 			</div><!--closing div for us-->
 			<div id="videos">
 				<h3>Boundary Animations</h3>
-				<noscript>
-					<ul>
-					<li><a href="http://www.youtube.com/embed/QEdDU3ho1oE" frameborder="0" allowfullscreen id="vid-frame">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</a></li>
-					<li><a href="http://www.youtube.com/embed/X7WzKaqCaV4" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.</a></li>
-					<li><a href="http://www.youtube.com/embed/g5_j2UaOVDM" frameborder="0" allowfullscreen id="vid-frame">30-second animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000.</a></li>
-					<li><a href="http://www.youtube.com/embed/9KDJzkqCyIo" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000.</a></li>
-					<li><a href="http://www.youtube.com/embed/7-0lM1g9iSs" frameborder="0" allowfullscreen id="vid-frame">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</a></li>
-					<li><a href="http://www.youtube.com/embed/jJ-0HzEgOd0" frameborder="0" allowfullscreen id="vid-frame">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.</li>
-					</ul>
-				</noscript>
-				<!--<ul id="mapvids">
-					<li class="first">
-						<iframe width="383" height="224" src="http://www.youtube.com/embed/QEdDU3ho1oE" frameborder="0" allowfullscreen id="vid-frame"></iframe>
-						<p class="caption">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</p>
+				<ul id="mapvids">
+					<li>
+						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/7-0lM1g9iSs?rel=0&showinfo=0" title="US Historical County Boundaries, 1629-2000 (0:30)"><img src="images/usanimations/us-counties-1629-2000.png" alt="US Historical County Boundaries, 1629-2000 [graphic]" /></a>
+						<p class="caption">US Historical County Boundaries, 1629-2000 (0:30)</p>
 					</li>
 					<li>
-						<iframe width="383" height="224" src="http://www.youtube.com/embed/X7WzKaqCaV4" frameborder="0" allowfullscreen id="vid-frame"></iframe>
-						<p class="caption">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.</p>
+						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/jJ-0HzEgOd0?rel=0&showinfo=0" title="US Historical County Boundaries, 1629-2000 (3:00)"><img src="images/usanimations/us-counties-1629-2000-3min.png" alt="US Historical County Boundaries, 1629-2000 (3:00) [graphic]" /></a>
+						<p class="caption">US Historical County Boundaries, 1629-2000 (3:00)</p>
 					</li>
 					<li>
-						<iframe width="383" height="224" src="http://www.youtube.com/embed/g5_j2UaOVDM" frameborder="0" allowfullscreen id="vid-frame"></iframe>
-						<p class="caption">30-second animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000.</p>
+						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/QEdDU3ho1oE?rel=0&showinfo=0" title="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (0:30)"><img src="images/usanimations/us-counties-territories-1629-2000.png" alt="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (0:30) [graphic]"  /></a>
+						<p class="caption">US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (0:30)</p>
 					</li>
 					<li>
-						<iframe width="383" height="224" src="http://www.youtube.com/embed/9KDJzkqCyIo" frameborder="0" allowfullscreen id="vid-frame"></iframe>
-						<p class="caption">3-minute animation of the changes in U.S. historical state and territorial boundaries, 1783 - 2000.</p>
+						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/X7WzKaqCaV4?rel=0&showinfo=0" title="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (3:00)"><img src="images/usanimations/us-counties-territories-1629-2000-3min.png" alt="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (3:00) [graphic]" /></a>
+						<p class="caption">US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (3:00)</p>
 					</li>
 					<li>
-						<iframe width="383" height="224" src="http://www.youtube.com/embed/7-0lM1g9iSs" frameborder="0" allowfullscreen id="vid-frame"></iframe>
-						<p class="caption">30-second animation of the changes in U.S. historical county boundaries, 1629 - 2000.</p>
+						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/g5_j2UaOVDM?rel=0&showinfo=0" title="US Historical State & Territorial Boundaries, 1783-2000 (0:30)"><img src="images/usanimations/us-states-territories-1783-2000.png" alt="US Historical State & Territorial Boundaries, 1783-2000 (0:30) [graphic]" /></a>
+						<p class="caption">US Historical State & Territorial Boundaries, 1783-2000 (0:30)</p>
 					</li>
 					<li>
-						<iframe width="383" height="224" src="http://www.youtube.com/embed/jJ-0HzEgOd0" frameborder="0" allowfullscreen id="vid-frame"></iframe>
-						<p class="caption">3-minute animation of the changes in U.S. historical county boundaries, 1629 - 2000.
+						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/9KDJzkqCyIo?rel=0&showinfo=0" title="US Historical State & Territorial Boundaries, 1783-2000 (0:30)"><img src="images/usanimations/us-states-territories-1783-2000-3min.png" alt="US Historical State & Territorial Boundaries, 1783-2000 (0:30) [graphic]" /></a>
+						<p class="caption">US Historical State & Territorial Boundaries, 1783-2000 (0:30)</p>
 					</li>
-				</ul>-->
+				</ul>
 			</div><!--closing div for videos-->
 		</div><!--closing div for pagecontent-->
 	</div><!--closing div for page-->
