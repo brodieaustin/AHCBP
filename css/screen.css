@@ -155,7 +155,7 @@ a#selected{
 #statebox{
   clear: both;
   float: right;
-  width: 202px;
+  width: 204px;
   color: inherit;
   padding: .25em .25em 0 0;
 }  
@@ -176,7 +176,7 @@ a#selected{
 
 #statebox #gotostate{
   float: left;
-  width: 40px;
+  width: 42px;
   border: 1px solid #000;
   background-color: #c8c8c8;
   cursor: pointer;
@@ -339,43 +339,45 @@ a#selected{
 }
 
 #pagecontent #videos ul li {
-   width: 95.98%;
+   width: 384px;
    margin: .5em auto;
    padding: .5em;
-   background-color: #d6d7c7;
+   text-align: center;
 }
 
 #pagecontent #videos p.caption{
    font-size: .9em;
    text-align: center;
+   padding-bottom: 0;
+   margin-bottom: 0;
 }
 
 #pagecontent #videos a{
    font-weight: normal;
 }
 
-#pagecontent #mapvids{
-   display: none;
-}
-
 /*styles for slider classes */
 .bx-wrapper{
+   width: 100%;
    padding-top: 0;
-   padding-bottom: 2em;
+   padding-bottom: 0;
 }
 
 .bx-pager{
    float: left;
-   width: 70%;
+   width: 280px;
    padding-top: .75em;
    padding-left: 1em;
+   border-top: 1px dotted #000;
 }
 
 .bx-start{
    float: right;
+   width: 86px;
    text-align: right;
    padding-top: .75em;
    padding-right: 1em;
+    border-top: 1px dotted #000;
 }
 
 .pager-link{
@@ -384,7 +386,8 @@ a#selected{
 
 .pager-active{
    font-weight: bold;
-   color: #pagecontent #888;
+   color: #888;
+   border-bottom: 2px solid #108EBC;
 }
 
 /*for statelist page*/
