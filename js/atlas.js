@@ -9,8 +9,6 @@
 	function followLink(){
 	  	var form = document.getElementById("statebox");
 	    var link = makeLink(form);
-	    
-	    console.log(link);
 
 	    if (link.search('undefined') == -1){ 
 	      /*open the link in the same window*/ 
@@ -31,13 +29,20 @@
 
     	var state = form["state_select"].value;
     	var link;
+    	
+    	console.log(state);
 
     	/* conditional statements to build link based on the link_type */
     	if (link_type == "page") {
       		link = location.origin + "/ahcbp/pages/" + state.split(";")[1] + ".html";
     	}
     	else if (link_type== "map") {
-      		link = "http://historical-county.newberry.org/website/" + state.split(";")[1] + "/viewer.htm";
+    		if (state == 'US;United_States'){
+	    		link = "http://historical-county.newberry.org/website/USA/viewer.htm";
+    		}
+      		else{
+      			link = "http://historical-county.newberry.org/website/" + state.split(";")[1] + "/viewer.htm";
+      		}
     	}
     	else if (link_type == "metadata"){
       		link = location.origin + "/ahcbp/documents/" + state.split(";")[0] + "_Metadata1.htm";
