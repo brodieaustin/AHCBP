@@ -126,7 +126,7 @@ a#selected{
 }
 
 #header h1{
-  padding: 1em .25em .15em .25em;
+  padding: .8em .25em .15em .25em;
   size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -163,7 +163,10 @@ a#selected{
 #statebox label{
   float: left;
   font-size: .8em;
-  padding: .25em;
+  margin-left: .5em;
+  padding-bottom: 0;
+  vertical-align: top;
+  line-height: 1.5em;
 }
 
 #statebox select{
@@ -172,6 +175,7 @@ a#selected{
   width: 160px;
   border: 1px solid #000;
   background-color: #fff;
+  margin-top: 0;
 }
 
 #statebox #gotostate{
@@ -180,6 +184,7 @@ a#selected{
   border: 1px solid #000;
   background-color: #c8c8c8;
   cursor: pointer;
+  margin-top: 0;
 }
 
 #statebox{
@@ -365,19 +370,17 @@ a#selected{
 
 .bx-pager{
    float: left;
-   width: 280px;
-   padding-top: .75em;
-   padding-left: 1em;
-   border-top: 1px dotted #000;
+   width: 264px;
+   padding-top: .25em;
+   margin-left: 2em;
 }
 
 .bx-start{
    float: right;
-   width: 86px;
+   width: 70px;
    text-align: right;
-   padding-top: .75em;
-   padding-right: 1em;
-    border-top: 1px dotted #000;
+   padding-top: 0;
+   margin-right: 2em;
 }
 
 .pager-link{
@@ -402,30 +405,43 @@ a#selected{
 #pagecontent div.download-link{  
   float: left;
   width: 385px;
-  margin: 2em 2em 4em 2em;
-  text-align: center;
+  height: 250px;
+  margin: 1em 2em 4em 2em;
 }
 
-#pagecontent div.download-link a{
-  display: block;
+#pagecontent div.link-wrapper{
   position: relative;
-  width: 89.6373057%;
-  height: 100%;
-  padding: 1.25em;
+  min-height: 224px;
+  text-align: center;
+  padding-top: 1em;
 }
 
-#pagecontent div.download-link img{
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+#pagecontent #statedownloads{
+  background: url('/ahcbp/images/statesmap-small.gif') no-repeat center center;
 }
 
-#pagecontent div.download-link h3{
+#pagecontent #statedownloads:hover{
+  background: url('/ahcbp/images/statesmap-small-hover.gif') no-repeat center center;
+  color: #108EBC;
+}
+
+#pagecontent #usdownloads{
+  background: url('/ahcbp/images/usmap.gif') no-repeat center center;
+}
+
+#pagecontent #usdownloads:hover{
+  background: url('/ahcbp/images/usmap-hover.gif') no-repeat center center;
+}
+
+#pagecontent div.link-wrapper h3{
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   width: 100%;
-  padding: 1em;
+  padding: 1em 0;
 }
+
+
 
 /*for download pages*/
 
