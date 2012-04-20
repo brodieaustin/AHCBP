@@ -9,49 +9,7 @@
 	<link rel="stylesheet" href="css/screen.css" type="text/css" />
 	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/statesmap.css" type="text/css" />
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js" language="Javascript"></script>
-	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
-	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
-	<script type="text/javascript" src="js/jquery.bxSlider.min.js" language="Javascript"></script>
-	
-	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/atlas.js" language="JavaScript"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var slider = $('#mapvids').bxSlider({
-				auto: true,
-				autoControls: true,
-				autoHover: true,
-				captions: true,
-				controls: false,
-				pager: true,
-				pause: 4000,
-				startImage: 'images/play.png',
-				stopImage: 'images/pause.png'
-			});
-			
-			$('.various').fancybox({
-				maxWidth	: 640,
-				maxHeight	: 500,
-				fitToView	: false,
-				width		: 640,
-				height		: 370,
-				autoSize	: false,
-				closeClick	: false,
-				openEffect	: 'none',
-				closeEffect	: 'none',
-				helpers : {
-    				title : {
-    				type : 'inside'
-    				}
-    			}
-			});
-			
-			$('.various').click(function(){
-				slider.stopShow();
-			});
-		});
-	</script>
 </head>
 <body>
 	<div id="header-wrapper">
@@ -61,8 +19,7 @@
 				<label><input type="radio" name="link_type" value="map" />Maps</label>
 				<label><input type="radio" name="link_type" value="metadata" />Metadata</label>
 				<select name="state_select" id="state_select" >            
-					<option value="">Select...</option>          
-					<option value="US;United_States">United States</option>
+					<option value="">Select...</option>
 					<option value="AL;Alabama">Alabama</option>
 					<option value="AK;Alaska">Alaska</option>
 					<option value="AZ;Arizona">Arizona</option>
@@ -128,7 +85,7 @@
 	<div id="navlist">
 		<ul>
 			<li><a href="index.html" title="Home" id="selected">Home</a></li>
-			<li><a href="downloads/index.html" title="Download Files">Download Files</a></li>
+			<li><a href="downloadfiles.html" title="Download Files">Download Files</a></li>
 			<li><a href="usingatlas.html" title="Using the Atlas">Using the Atlas</a></li>
 			<li><a href="project.html" title="About the Project">About the Project</a></li>
 			<li><a href="publications.html" title="Publications">Publications</a></li>
@@ -197,43 +154,6 @@
 					<li><a id="wy" title="Wyoming" href="pages/Wyoming.html"></a></li>         
 				</ul>     
 			</div><!--closing div for statemap-->
-			<div class="clear" style="clear:both;">&nbsp;</div>
-			<div id="us" style="margin-right: 1em;">
-				<h3>National Data</h3>
-				<a href="pages/United_States.html" title="United States">
-					<div class="link-wrapper" id="usdownloads"></div>
-				</a>
-				<p>Click on the national map to see all of the Atlas' content related to the nation at one view. Like the state map above this content includes  interactive maps, shapefiles, and metadata.</p>
-			</div><!--closing div for us-->
-			<div id="videos">
-				<h3>Boundary Animations</h3>
-				<ul id="mapvids">
-					<li>
-						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/7-0lM1g9iSs?rel=0&showinfo=0&autoplay=1" title="US Historical County Boundaries, 1629-2000 (0:30)"><img src="images/usanimations/us-counties-1629-2000.png" alt="US Historical County Boundaries, 1629-2000 [graphic]" /></a>
-						<p class="caption">US Historical County Boundaries, 1629-2000 (0:30)</p>
-					</li>
-					<li>
-						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/jJ-0HzEgOd0?rel=0&showinfo=0&autoplay=1" title="US Historical County Boundaries, 1629-2000 (3:00)"><img src="images/usanimations/us-counties-1629-2000-3min.png" alt="US Historical County Boundaries, 1629-2000 (3:00) [graphic]" /></a>
-						<p class="caption">US Historical County Boundaries, 1629-2000 (3:00)</p>
-					</li>
-					<li>
-						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/QEdDU3ho1oE?rel=0&showinfo=0&autoplay=1" title="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (0:30)"><img src="images/usanimations/us-counties-territories-1629-2000.png" alt="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (0:30) [graphic]"  /></a>
-						<p class="caption">US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (0:30)</p>
-					</li>
-					<li>
-						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/X7WzKaqCaV4?rel=0&showinfo=0&autoplay=1" title="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (3:00)"><img src="images/usanimations/us-counties-territories-1629-2000-3min.png" alt="US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (3:00) [graphic]" /></a>
-						<p class="caption">US Historical County Boundaries (1629-2000), with State/Territorial boundaries (1783-2000) (3:00)</p>
-					</li>
-					<li>
-						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/g5_j2UaOVDM?rel=0&showinfo=0&autoplay=1" title="US Historical State & Territorial Boundaries, 1783-2000 (0:30)"><img src="images/usanimations/us-states-territories-1783-2000.png" alt="US Historical State & Territorial Boundaries, 1783-2000 (0:30) [graphic]" /></a>
-						<p class="caption">US Historical State & Territorial Boundaries, 1783-2000 (0:30)</p>
-					</li>
-					<li>
-						<a class="various fancybox.iframe" href="http://www.youtube.com/embed/9KDJzkqCyIo?rel=0&showinfo=0&autoplay=1" title="US Historical State & Territorial Boundaries, 1783-2000 (3:00)"><img src="images/usanimations/us-states-territories-1783-2000-3min.png" alt="US Historical State & Territorial Boundaries, 1783-2000 (0:30) [graphic]" /></a>
-						<p class="caption">US Historical State & Territorial Boundaries, 1783-2000 (3:00)</p>
-					</li>
-				</ul>
-			</div><!--closing div for videos-->
 		</div><!--closing div for pagecontent-->
 	</div><!--closing div for page-->
 	<div id="footer-wrapper">
