@@ -181,7 +181,10 @@ a#selected{
 #statebox #gotostate{
   float: left;
   width: 42px;
-  border: 1px solid #000;
+  border-top: 1px solid #000;
+  border-right: 0;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
   background-color: #c8c8c8;
   cursor: pointer;
   margin-top: 0;
