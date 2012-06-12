@@ -18,6 +18,9 @@
 	<script type="text/javascript" src="js/atlas.js" language="JavaScript"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			/*use to display custom message at top of page*/
+			var show_message = true;
+			
 			var slider = $('#mapvids').bxSlider({
 				auto: true,
 				autoControls: true,
@@ -50,6 +53,16 @@
 			$('.various').click(function(){
 				slider.stopShow();
 			});
+			
+			if (show_message == true){
+				var message_text = 'Welcome to the redesigned AHCBP website. In addition to an updated look and feel, the project now makes available new maps, data, and shapefiles for the United States as a whole. Also, you can watch animated version of the AHCBP data below.';
+				
+				$('#navlist').prepend('<div id="message"><div class="close_button">X</div><p>' + message_text + '</p></div>')
+			
+				$('.close_button').bind('click', function(){
+					$(this).parent().hide();
+				});
+			}
 		});
 	</script>
 </head>

@@ -53,6 +53,7 @@ body{
   font-family: Arial, Helvetica, Verdana, sans-serif;
   overflow-x: auto;
   overflow-y: scroll;
+  color: #000;
 }
 
 p{
@@ -204,6 +205,30 @@ a#selected{
 #navlist ul li{
   display: inline;
   margin: 0 2em 0 0;
+}
+
+/*message box*/
+/*style for special alert box that is prepended to navigation on home page only*/
+
+#message{
+  margin: 0 0 2em 0;
+  padding: 1em 4em .1em 1em;
+  background-color: #108EBC;
+  color: #fff;
+  font-size: 90%;
+}
+
+#message .close_button{
+  float: right;
+  position: relative;
+  top: .2em;
+  right: -2.75em;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#message .close_button:hover{
+  color: #000;
 }
 
 /*page and pagecontent*/
