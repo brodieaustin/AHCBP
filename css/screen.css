@@ -445,20 +445,20 @@ a#selected{
 }
 
 #pagecontent #statedownloads{
-  background: url('/ahcbp/images/statesmap-small.gif') no-repeat center center;
+  background: url('../images/statesmap-small.gif') no-repeat center center;
 }
 
 #pagecontent #statedownloads:hover{
-  background: url('/ahcbp/images/statesmap-small-hover.gif') no-repeat center center;
+  background: url('../images/statesmap-small-hover.gif') no-repeat center center;
   color: #108EBC;
 }
 
 #pagecontent #usdownloads{
-  background: url('/ahcbp/images/usmap.gif') no-repeat center center;
+  background: url('../images/usmap.gif') no-repeat center center;
 }
 
 #pagecontent #usdownloads:hover{
-  background: url('/ahcbp/images/usmap-hover.gif') no-repeat center center;
+  background: url('../images/usmap-hover.gif') no-repeat center center;
 }
 
 #pagecontent div.link-wrapper h3{
