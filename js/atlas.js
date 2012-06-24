@@ -1,22 +1,21 @@
 	window.onload = function(){
-		var statebox = document.getElementById("statebox");
-		statebox.style.display = "block";
+		var form = document.getElementById("statebox");
+		form.style.display = "block";
 		
-		var gototstate= document.getElementById("gotostate");
-		gotostate.onclick = followLink;
-	};
-  
-	function followLink(){
-	  	var form = document.getElementById("statebox");
-	    var link = makeLink(form);
+		var gotostate = document.getElementById("gotostate");
+		
+		gotostate.onclick = function(){
+			
+			var link = makeLink(form);
 
-	    if (link.search('undefined') == -1){ 
-	      /*open the link in the same window*/ 
-	      window.open(link, "_self");
-    	  form["state_select"].value = "";
-    	  form["link_type"][0].checked = true;
-    	}
-  	};
+			if (link.search('undefined') == -1){ 
+			  /*open the link in the same window*/ 
+			  form["state_select"].value = "";
+			  form["link_type"][0].checked = true;
+			  window.location.href = link;
+			}
+		};
+	};
   
 	function makeLink(form){
     	var link_type;
@@ -29,12 +28,11 @@
 
     	var state = form["state_select"].value;
     	var link;
-    	
-    	console.log(state);
+		var location = "http://" + window.location.host + "/ahcbp";
 
     	/* conditional statements to build link based on the link_type */
     	if (link_type == "page") {
-      		link = location.origin + "/ahcbp/pages/" + state.split(";")[1] + ".html";
+      		link = location + "/pages/" + state.split(";")[1] + ".html";
     	}
     	else if (link_type== "map") {
     		if (state == 'US;United_States'){
@@ -45,12 +43,12 @@
       		}
     	}
     	else if (link_type == "metadata"){
-      		link = location.origin + "/ahcbp/documents/" + state.split(";")[0] + "_Metadata1.htm";
+      		link = location + "/documents/" + state.split(";")[0] + "_Metadata1.htm";
     	}
     	else {
       		link = "";
     	}
-    
+		
     	return link;
     }
 
