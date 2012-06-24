@@ -51,8 +51,6 @@ table {
 body{
   width: 100%;
   font-family: Arial, Helvetica, Verdana, sans-serif;
-  overflow-x: auto;
-  overflow-y: scroll;
   color: #000;
 }
 
@@ -156,7 +154,7 @@ a#selected{
 #statebox{
   clear: both;
   float: right;
-  width: 204px;
+  width: 206px;
   color: inherit;
   padding: .25em .25em 0 0;
 }  
@@ -173,10 +171,11 @@ a#selected{
 #statebox select{
   clear: both;
   float: left;
-  width: 160px;
+  margin-top: 0;
+  margin-left: .5em;
+  width: 154px;
   border: 1px solid #000;
   background-color: #fff;
-  margin-top: 0;
 }
 
 #statebox #gotostate{
@@ -271,7 +270,7 @@ a#selected{
 }
 
 .pageinset img{
-  width: 87%%;
+  width: 87%;
   margin: 1em;
 }
 
